@@ -1,0 +1,25 @@
+{
+  "name": "iso-app-renderer-mithril",
+  "version": "1.0.0",
+  "description": "Mithril renderer for iso-app.",
+  "author": "James Newell <james@digitaledgeit.com.au>",
+  "main": "plugin.js",
+  "browser": {
+    "./lib/server.js": "./lib/client.js"
+  },
+  "dependencies": {
+    "mithril-node-render": "^0.4.1"
+  },
+  "devDependencies": {
+    "mithril": "^0.2.0"
+  },
+  "scripts": {
+    "client": "watchify example/client.js -o example/client.build.js",
+    "server": "node example/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:iso-js/iso-app-renderer-mithril.git"
+  },
+  "license": "MIT"
+}
